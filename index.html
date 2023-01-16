@@ -18,7 +18,7 @@
                 <a href="#Galerie">Galerie</a>
                 <a href="#menu">Menu</a>
                 <a href="#event">Evénements</a>
-                <a href="#footer">CONTACT</a>
+                <a href="#contact">CONTACT</a>
             </nav>
         </header>
     </section>
@@ -81,7 +81,7 @@
             </div>
         </div>
         <div >
-            <div class="flex-menu">
+            <div id="menu" class="flex-menu">
                 <div class="text-menu">
                     <h1>Un menu préparé avec passion</h1>
                     <p>
@@ -96,7 +96,7 @@
                 <p> Découvrez notre Menu et voir notre plates de jour,  parmi plusieurs options. Il ne vous reste plus qu'à commander et à vous régaler, seul, en famille ou entre amis.
                     N'hésitez pas à nous appeler en cas de doute ou si vous avez une question sur une composition. Nous vous répondons avec plaisir.</p>
             </div>
-            <div id="menu">
+            <div id="menu-acc">
                 <button class="accordion">Menu 1</button>
                 <div class="panel">
                     <p class="menu"> PIZZA CHEESE MARGARITA WITH TOMATE READY AND SET TO EAT.</p>
@@ -116,7 +116,7 @@
                 </div>
             </div>
             <div>
-                <div class="flex-event">
+                <div id="event" class="flex-event">
                     <div class="text-event">
                         <p>
                             Votre lieu Notre showman service unique des pizzas en live.
@@ -126,7 +126,7 @@
                         <img class="event-img" src="public/image/pizza14.jpg" alt="pizza14">
                     </div>
                 </div>
-                <div id="event" class="event-content">
+                <div  class="event-content">
                     <div>
                         <img class="evenment-img" src="public/image/pizza3.jpg" alt="pizza3">
                         <p>01/01/2023   ,  12:35h</p>
@@ -150,16 +150,61 @@
                     </div>
                 </div>
             </div>
+            <div>
+                <div class="contact-box">
+                    <div>
+                        <h1>Address</h1>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2640.2758176362!2d7.723182015521402!3d48.56626587926001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4796c9c6b9d392db%3A0xce05b835403847ca!2s15%20Rue%20Watteau%2C%2067200%20Strasbourg!5e0!3m2!1sen!2sfr!4v1673271635127!5m2!1sen!2sfr" width="300" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <div class="form">  
+                        <form id="contact" action="" method="post">
+                          <h3>Quick Contact</h3>
+                          <h4>Get in touch !</h4>
+                          <fieldset>
+                            <input placeholder="Your name" type="text" tabindex="1" required autofocus>
+                          </fieldset>
+                          <fieldset>
+                            <input placeholder="Your Email Address" type="email" tabindex="2" required>
+                          </fieldset>
+                          <fieldset>
+                            <input placeholder="Your Phone Number" type="tel" tabindex="3" required>
+                          </fieldset>
+                          <fieldset>
+                            <textarea placeholder="Type your Message Here...." tabindex="5" required></textarea>
+                          </fieldset>
+                          <fieldset>
+                            <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+                          </fieldset>
+                        </form>
+                      </div>
+
+                </div>
+            </div>
         </div>
         
     </main>
     <footer id="footer">
-        <div class="social-media">
-            <!-- social media-->
-            <a href="#facebook"><i class="fa-brands fa-facebook-f"></i> </a>
-            <a href="#twitter"></a><i class="fa-brands fa-twitter"></i> </a>
-            <a href="#instagram"></a><i class="fa-brands fa-instagram"></i> </a>
+        <div class="footer-flex">
+            <div class="social-media">
+                <p>Notre réseaux sociaux :</p>
+                <!-- social media-->
+                <li><a href="#facebook"><i class="fa-brands fa-facebook-f"></i> </a></li>
+                <li><a href="#twitter"><i class="fa-brands fa-twitter"></i> </a></li>
+                <li><a href="#instagram"><i class="fa-brands fa-instagram"></i> </a></li>
+            </div>
+            <div>
+                <p>Tel: 0769999952</p>
+                <p>Mail: pizzzaMaker@outlock.fr</p>
+                <p>Du lundi au vendredi : <p>
+                    11h45 – 14h et 18h – 23h
+                    
+                </p>
+                <p>Samedi : 11h30 – 14h et 19h – 23h
+                    </p>
+                <p>Dimanche : 12h – 15h</p></p>
+            </div>
         </div>
+        
     </footer>
 
     <script src="public/js/script.js"></script>
