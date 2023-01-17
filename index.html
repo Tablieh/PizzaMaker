@@ -14,13 +14,15 @@
                 <img class="Logo" src="public/image/logo.png" alt="PizzaMaker">
             </div>
             <nav class="topnav">
-                <span id="burger" onclick="nav(this)" class="fas fa-bars fa-2x mobile"></span>
-                <div class="visible">
-                    <a href="#Accueil">Accueil</a>
-                    <a href="#Galerie">Galerie</a>
-                    <a href="#menu">Menu</a>
-                    <a href="#event">Evénements</a>
-                    <a href="#contact">CONTACT</a>
+                <div class="burger">
+                    <label for="menu-toggle"> ☰ </label><input type="checkbox" id="menu-toggle">
+                    <ul class="nav">
+                    <li><a href="#Accueil">Accueil</a></li>
+                    <li><a href="#Galerie">Galerie</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#event">Evénements</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                    </ul>
                 </div>
             </nav>
         </header>
@@ -96,7 +98,10 @@
                 </div>
             </div>
             <div class="info-menu">
-                <p> Découvrez notre Menu et voir notre plates de jour,  parmi plusieurs options. Il ne vous reste plus qu'à commander et à vous régaler, seul, en famille ou entre amis.
+                <h1 class="h1-mobile">
+                    Découvrez notre Menu
+                </h1>
+                <p class="p-normal"> Découvrez notre Menu et voir notre plates de jour,  parmi plusieurs options. Il ne vous reste plus qu'à commander et à vous régaler, seul, en famille ou entre amis.
                     N'hésitez pas à nous appeler en cas de doute ou si vous avez une question sur une composition. Nous vous répondons avec plaisir.</p>
             </div>
             <div id="menu-acc">

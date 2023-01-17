@@ -4,7 +4,7 @@
     padding: 0;
 }
 .topnav{
-    display: flex;
+    width:770px;
     text-align: center;
     margin-left: 50px;
     margin-top: 30px;
@@ -30,7 +30,6 @@ color: rgb(212, 209, 209);
     text-decoration: none;
     width: 100px;
     height: 100px;
-    margin-right: 150px;
 }
 .myDiv{
     margin-left: 350px;
@@ -564,11 +563,52 @@ body.active #allimg a:hover{
 span#burger.fas.fa-bars.fa-2x.mobile{
     display: none;
  }
- 
+ li { 
+    font-size: 1.4rem;	
+  }
+
+  .burger { display: block; list-style-type: none;  }
+  .burger ul { text-align: center; }
+  .burger li { display: inline-block; width: 13%; list-style: none;  color: #fff; }
+  .burger li a { display: block; padding: 15px; text-decoration: none; color: #C85F5F; transition: 0.8s; }
+  .burger li a:hover {  color: rgb(212, 209, 209);}
+  .burger label { display: none; }
+  #menu-toggle { display: none; }
+  
+  @media all and (max-width: 700px) and (min-width: 0px) {
+  .burger label { display: block; height: 70px; width: 70px; line-height: 70px; text-align: center; color: rgb(14, 13, 13); font-size: 1.8rem;  cursor: pointer; }
+  .burger .nav { display: none; }
+  .burger li { width: 100%; }
+  #menu-toggle:checked + .nav { display: block; }
+  .burger label:active .nav { display: none;  }
+  }
+  .h1-mobile{
+    display: none;
+  }
 /* pour les ecran jusqua une largeur de 800px */
 @media screen and (max-width:800px){
-    span#burger.fas.fa-bars.fa-2x.mobile{
-       display: block;
+    .p-normal, .end-gallary, .flex-menu{
+        display: none;
+    }
+    .h1-mobile{
+        margin-top: 15px;
+        font-size: 25px;
+        width: 300px;
+        display: block;
+    }
+    .video{
+        height: 440px;
+        float: left;
+    }
+    .intro-gallary p{
+        display: none;
+    }
+    .intro-gallary h1{
+        font-size: 25px;
+        width: 300px;
+    }
+    .parti2{
+        display: none;
     }
     .visible{
         opacity: 0;
@@ -577,6 +617,7 @@ span#burger.fas.fa-bars.fa-2x.mobile{
         margin-left: 0px;
     }
     .container{
+        margin-top: 0px;
         margin-left: 0px;
     }
     .parti2{
