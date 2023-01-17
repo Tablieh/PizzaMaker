@@ -48,3 +48,35 @@ for (i = 0; i < acc.length; i++) {
     }
   });
 }
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  window.onscroll = function() { 
+    if (document.body.scrollTop > 40 || document.documentElement.scrollTop > 40) {
+      myBtn.style.opacity = "1";
+      toggle.style.opacity = "1";
+    } else {
+      myBtn.style.opacity = "0";
+      toggle.style.opacity = "0";
+    }}; 
+}
+function goup(x){
+
+const myBtn = document.getElementById("myBtn");
+myBtn.addEventListener("click", function () {
+  //window.scrollTo(0, 0);
+  window.scrollTo(
+    {
+      top: 0,
+      left: 0,
+      behavior: "smooth"
+    }
+  );
+});
+}
+const body = document.querySelector('body');
+const togglle = document.getElementById('toggle');
+togglle.onclick = function(){
+  togglle.classList.toggle('active')
+  body.classList.toggle('active')
+}
