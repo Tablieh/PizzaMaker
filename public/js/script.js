@@ -80,3 +80,19 @@ togglle.onclick = function(){
   togglle.classList.toggle('active')
   body.classList.toggle('active')
 }
+
+function nav() {
+  var x = document.querySelector('.visible');
+  if (x.style.opacity = "0") {
+    x.style.opacity = "1";
+    console.log(x)
+  } else {
+    x.style.opacity = "0";
+    console.log(x)
+  }
+}
+
+const burger = document.getElementById('burger');
+burger.addEventListener("click", function () {
+  nav()
+});

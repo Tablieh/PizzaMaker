@@ -561,3 +561,63 @@ body.active #allimg a:hover{
                 inset 0 2px 8px rgba(0, 0, 0, 0.1),
                 inset 0 -4px 4px rgba(0, 0, 0, 0.05);
 }
+span#burger.fas.fa-bars.fa-2x.mobile{
+    display: none;
+ }
+ 
+/* pour les ecran jusqua une largeur de 800px */
+@media screen and (max-width:800px){
+    span#burger.fas.fa-bars.fa-2x.mobile{
+       display: block;
+    }
+    .visible{
+        opacity: 0;
+    }
+    .myDiv{
+        margin-left: 0px;
+    }
+    .container{
+        margin-left: 0px;
+    }
+    .parti2{
+        margin-left: 0px;
+    }
+    #Galerie{
+        margin-left: 0px;
+    }
+    .flex-event{
+        margin-left: 0px;
+    }
+    .event-content{
+        margin-left: 0px;
+    }
+    .contact-box{
+        margin-left: 0px;
+    }
+    #footer{
+        margin-left: 0px;
+    }
+    .flex-menu{
+        margin-left: 0px;
+    }
+    .info-menu{
+        margin-left: 0px;
+    }
+    #menu-acc{
+        margin-left: 0px;
+    }
+    .logo{
+        display: none;
+    }
+    .topnav{
+        text-align: start;
+        padding-top: 0px;
+        margin-left: 10px;
+        margin-top: 10px;
+        flex-direction: column;
+    }
+    .topnav a{
+        text-align: start;
+       padding: 7px 8px;
+    }
+}
