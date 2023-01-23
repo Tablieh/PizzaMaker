@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="public/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
     <title>PizzaMaker</title>
 </head>
 <body>
@@ -57,17 +58,20 @@
                     Vous avez un avant-goût de notre cuisine, il ne vous manque que les odeurs pour vous laisser voyager au gré des saveurs que
                     nous vous proposons toute l’année. Venez vite nous rendre visite.</p>
             </div>
-            <div class="box-content">
-                <div id="content">
-                    <div class="tous" ><img class="img-box" src="public/image/pizza3.jpg" alt="pizza"></div>
-                    <div class="vegan"><img class="img-box" src="public/image/pizza4.jpg" alt="pizza"></div>
-                    <div class="tous" ><img class="img-box" src="public/image/pizza5.jpg" alt="pizza"></div>
-                    <div class="halal" ><img class="img-box" src="public/image/pizza6.jpg" alt="pizza"></div>
-                    <div class="vegan" ><img class="img-box" src="public/image/pizza7.jpg" alt="pizza"></div>
-                    <div class="halal" ><img class="img-box" src="public/image/pizza8.jpg" alt="pizza"></div>
-                    <div class="tous" ><img class="img-box" src="public/image/pizza9.jpg" alt="pizza"></div>
-                    <div class="vegan" ><img class="img-box" src="public/image/pizza1.jpg" alt="pizza"></div>
+            <div class="box-content swiper mySwiper">
+                <div id="content" class="swiper-wrapper">
+                    <div class="tous swiper-slide" ><img class="img-box" src="public/image/pizza3.jpg" alt="pizza"></div>
+                    <div class="vegan swiper-slide"><img class="img-box" src="public/image/pizza4.jpg" alt="pizza"></div>
+                    <div class="tous swiper-slide" ><img class="img-box" src="public/image/pizza5.jpg" alt="pizza"></div>
+                    <div class="halal swiper-slide" ><img class="img-box" src="public/image/pizza6.jpg" alt="pizza"></div>
+                    <div class="vegan swiper-slide" ><img class="img-box" src="public/image/pizza7.jpg" alt="pizza"></div>
+                    <div class="halal swiper-slide" ><img class="img-box" src="public/image/pizza8.jpg" alt="pizza"></div>
+                    <div class="tous swiper-slide" ><img class="img-box" src="public/image/pizza9.jpg" alt="pizza"></div>
+                    <div class="vegan swiper-slide" ><img class="img-box" src="public/image/pizza1.jpg" alt="pizza"></div>
                 </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
             </div>
             <nav id="allimg">
                 <li><a class="btn_tous" href="">Tous</a></li>
@@ -160,9 +164,8 @@
             </div>
             <div>
                 <div class="contact-box">
-                    <div>
-                        <h1>Address</h1>
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2640.2758176362!2d7.723182015521402!3d48.56626587926001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4796c9c6b9d392db%3A0xce05b835403847ca!2s15%20Rue%20Watteau%2C%2067200%20Strasbourg!5e0!3m2!1sen!2sfr!4v1673271635127!5m2!1sen!2sfr" width="300" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <div class="adress">
+                        <iframe class="adress-mobile" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2640.2758176362!2d7.723182015521402!3d48.56626587926001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4796c9c6b9d392db%3A0xce05b835403847ca!2s15%20Rue%20Watteau%2C%2067200%20Strasbourg!5e0!3m2!1sen!2sfr!4v1673271635127!5m2!1sen!2sfr" width="300" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                     <div class="form">  
                         <form id="contact" action="" method="post">
@@ -218,6 +221,7 @@
     <div id="toggle">
         <i class="indicator"></i>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="public/js/script.js"></script>
 </body>
 </html>
